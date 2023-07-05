@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="/style.css">
+</head>
+<body>
+    <section class="section1" id="home-page"> 
+        <nav class="navbar">
+            <div class="nav-container-icon">
+                <a href="#">
+                    <img class="logo" src="img/metaldedesign-01.png">
+                </a>
+            </div>
+            <ul class="nav-list" id="navi-list" > 
+                <li class="list-item" id="Home">
+                    <a href="#home-page">Home</a>
+                </li>
+                <li class="list-item" id="About">
+                    <a href="#about-page">About Us</a>
+                </li>
+                <li class="list-item" id="Services">
+                    <a href="#services-page">Services</a>
+                </li>
+                <li class="list-item" id="Projects">
+                    <a href="#projects">Projects</a>
+                </li>
+                <li class="list-item" id="Contact Us"> 
+                    <a href="#contact-us">Contact Us</a>
+                </li>
+                
+            </ul>
+            <div class="menu" id="toogle-button">
+                <div class="menu-line"></div>
+                <div class="menu-line"></div>
+                <div class="menu-line"></div>
+            </div>
+        </nav>
+      <div class="hero_section">
+        <h1>Welcome</h1>
+      </div>
+    </section>
+    <section class="section2" id="about-page"></section>
+    <section class="section3" id="services-page"></section>
+    <section class="section4" id="projects"></section>
+    <section class="section5" id="contact-us"></section>
+    <footer class="footer"></footer>
+    
+</body>
+<script>
+    const toogleButton =document.getElementById('toogle-button');
+    const naviList = document.getElementById('navi-list');
+
+    toogleButton.addEventListener('click', () => {
+        naviList.classList.toggle('active');
+    })
+</script>
+</html>
