@@ -33,6 +33,10 @@
                     <li class="list-item" id="Projects">
                         <a href="#projects">Projects</a>
                     </li>
+                   
+                    <li class="list-item" id="Clients"> 
+                        <a href="#clients">Clients</a>
+                    </li>
                     <li class="list-item" id="Contact Us"> 
                         <a href="#contact-us">Contact Us</a>
                     </li>
@@ -89,10 +93,56 @@
         </div>
     </section>
     <section class="section4" id="projects"></section>
-    <section class="section5" id="contact-us">
+    
+    <section class="section5" id="clients">
         <div></div>
     </section>
-    <footer class="footer"></footer>
+    <!-------------------- footer --------------->
+    <footer class="footer" id="contact-us">
+        <div class="footer-container">
+            <div class="containeremail">
+        
+                <form onsubmit="sendEmail(); reset(); return false">
+                    <h2>Get in Touch</h2>
+                    <div class="fields">
+                      <div class="field half">
+                        <input type="text" name="name" id="name" placeholder="Name" required="">
+                      </div>
+                      <div class="field half">
+                        <input type="email" name="email" id="email" placeholder="Email" required="">
+                      </div>
+                      <div class="field half">
+                        <input type="text" name="phone" id="phone" placeholder="Phone (Optional)" optional="">
+                      </div>
+                      <div class="field">
+                        <textarea name="message" id="message" placeholder="Message" rows="4"></textarea>
+                      </div>
+                    </div>
+                     <!--<ul class="actions">
+                      <li>
+                        <input
+                          type="submit"
+                          value="Send Message"
+                          class="button primary"
+                        />
+                      </li>
+                    </ul>  -->
+                    <button type="submit">Send</button>
+                  </form>
+            </div>
+            <div class="contact-box">
+                <h4>Corporate Headquarter</h4>
+                <ul>
+                    <li>2855 E. 11TH AVENUE,
+                        HIALEAH, FL 33013</li>
+                    <li>email</li>
+                    <li>phone</li>
+                </ul>
+    
+            </div>
+        </div>
+        
+    </footer>
     
 </body>
 <script>
@@ -103,4 +153,31 @@
         naviList.classList.toggle('active');
     })
 </script>
+<script src="https://smtpjs.com/v3/smtp.js"></script>
+    <script>
+        function sendEmail() {
+          let name = document.getElementById("name").value;
+          let email = document.getElementById("email").value;
+          let phone = document.getElementById("phone").value;
+          let message = document.getElementById("message").value;
+  
+          let body =
+            "Name: " + name + "<br/> Email: " + email + "<br/> Phone: " + phone + "<br/> Message: " + message;
+  
+          Email.send({
+            // Host: "smtp.elasticemail.com",
+            // Username: "abdiel.dsem@gmail.com",
+            // Password: "B56C4973294B1797A497C303F732CA611DD1",
+            SecureToken: "cf8ef982-efd5-42ad-aabf-a0f868dbea30",
+            To: "abdiel.dsem@gmail.com",
+            From: "abdiel.dsem@gmail.com",
+            Subject: "IMPORTANT | Portfolio Message",
+            Body: body,
+          }).then((message) => alert("Message Sent Succefully"));
+        }
+      </script>
+
+
+
+
 </html>
