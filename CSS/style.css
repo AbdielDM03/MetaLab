@@ -13,8 +13,8 @@ html {
 .section5{
     width: 100%;
     height: 100vh;
-    border: 1px blue solid;
 }
+
 /* ----------------navbar----------------------- */
 .nav-container{
     background-color: rgb(255, 255, 255);
@@ -59,9 +59,14 @@ html {
 
 /* -----------------hero sec--------------------- */
 .hero-sec{
-    background-color: rgb(255, 255, 255);
+   
     width: 100%;
     height: 100vh;
+    background-image: url(/img/hero-section.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: top;
+    
 }
 .text-hero{
     width: 100%;
@@ -69,15 +74,21 @@ html {
     justify-content: center;
     display: flex;
     align-items: center;
-    background-color: green;
     font-size: 30px;
-
+}
+.text-hero h1{
+    margin-bottom: 100px;
 }
 /* ----------------sec2--------------------- */
+.section2{
+    background-image: url(/img/section-2.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: top;
+}
 .container2{ 
     width: 100%;
     height: 100vh;
-    background-color: green;
     color: rgb(0, 0, 0);
     display: flex;
     justify-content: center;
@@ -85,6 +96,7 @@ html {
     flex-direction: column;
         padding: 180px;
     padding-top: 250px;
+    
 }
 
 .container2 h2{
@@ -99,10 +111,15 @@ html {
     font-size: 20px;
 }
 /* ----------------sec3--------------------- */
+.section3{
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: top;
+    background-image: url(/img/section-3.png);
+}
 .container3{
     width: 90%;
     height: 90vh;
-    background-color: green;
     display: flex;
     justify-content: space-around;
     align-items: flex-start;
@@ -110,6 +127,8 @@ html {
     flex-direction: column;
     margin-left: 80px;
     margin-top: 45px;
+   
+    
 }
 .box_container{
     width: 100%;
@@ -132,10 +151,10 @@ html {
 .box2, 
 .box3 {
     width: 35%;
-    height: 75vh;
-    border: white solid 1px;
+    height: 80vh;
     padding: 45px;
     line-height: 27px;
+    background-color: white;
 }
 .box1 p, 
 .box2 p, 
@@ -158,9 +177,21 @@ html {
     text-align: center;
 }
 .contact-box{
-    width: 20%;
-    height: 20vh;
+    width: 40%;
+    height: 40vh;
     color: white;
+    margin-top: 200px;
+    line-height: 30px;
+}
+.ul{
+    list-style-type: none;
+}
+.contact-box h4{
+    font-size: 25px;
+    padding-bottom: 20px;
+}
+ .copyright{
+    margin-top: 100px;
 }
 .containeremail{
     width: 50%;
@@ -169,6 +200,15 @@ html {
     justify-content: center;
     align-items: baseline;
 }
+.lane{
+    width: 2px;
+}
+.lane_bar{
+    width: 10%;
+    height: 100%;
+    background-color: white;
+}
+
 form{
     background-color: white;
     display: flex;
@@ -177,6 +217,7 @@ form{
     width: 90%;
     max-width: 600px;
     border-radius: 10px;
+    margin-top: 15px;
 }
 form h2{
     color: brown;
