@@ -9,16 +9,14 @@ html {
 .section1,
 .section2,
 .section3,
-.section4,
-.section5{
+.section4{
     width: 100%;
     height: 100vh;
-   border: 1px solid rgb(37, 11, 114);
 }
 
 /* ----------------navbar----------------------- */
 .nav-container{
-    background-color: rgb(141, 124, 124);
+    background-color: gray;
     color: rgb(0, 0, 0);
     display: flex;
     justify-content: space-around;
@@ -27,6 +25,7 @@ html {
     width: 100%;
     position: fixed;
     height: 14vh;
+    border-radius: 40px;
 }
 .nav-list{
     list-style-type: none;
@@ -115,6 +114,72 @@ html {
     background-color: rgb(255, 255, 255, 0.6);
     
 }
+
+/* ----------------sec3--------------------- */
+.section3{
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: top;
+    background-image: url(/img/background\ image.jpg);
+}
+.container3{
+    width: 90%;
+    height: 95vh;
+    display: flex;
+    justify-content: space-around;
+    align-items: flex-start;
+    font-size: 20px;
+    flex-direction: column;
+    margin-left: 80px;
+     
+}
+.box_container{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+}
+.box_container h3{
+    text-align: center;
+}
+.container3 h2{
+    color: rgb(255, 255, 255);
+    text-align: center;
+    width: 100%;
+    justify-self: center;
+    margin-top: 10px;
+    margin-bottom: 20px;
+    font-size: 40px;
+}
+.box1, 
+.box2, 
+.box3 {
+    width: 35%;
+    height: 80vh;
+    padding: 45px;
+    line-height: 27px;
+    background-color: white;
+    border: 1px solid black;
+    border-radius: 40px;
+    margin: 2px;
+}
+.box1 p, 
+.box2 p, 
+.box3 p {
+    padding-top: 25px;
+}
+/* -----------------------sec4------------------- */
+.container4{
+    width: 100%;
+    height: 120vh;
+}
+.container4 h2{
+    font-size: 40px;
+    text-align: center;
+    color: white;
+}
 .gsection{
     width: 100%;
     height: 100vh;
@@ -125,64 +190,51 @@ html {
     
 }
 .section4{
-    background-image: url(/img/pexels-rahul-716398.jpg);
+    background-image: url(/img/background\ image.jpg);
+    height: 120vh;
 }
 .gallery{
     padding: 5px;
 }
-/* ----------------sec3--------------------- */
-.section3{
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: top;
-    background-image: url(/img/pexels-rahul-716398.jpg);
-}
-.container3{
-    width: 90%;
-    height: 90vh;
-    display: flex;
-    justify-content: space-around;
-    align-items: flex-start;
-    font-size: 20px;
-    flex-direction: column;
-    margin-left: 80px;
-    margin-top: 45px;
-   
+/* ---------------------sec5------------------- */
+.section5{
+    width: 100%;
+    height: 75vh;
+    background-image: url(/img/background\ image.jpg);
     
 }
-.box_container{
+.container5{
     width: 100%;
-    height: 100vh;
+    height: 100%;
+}
+.container5 h2{
+    text-align: center;
+    font-size: 40px;
+    color: white;
+}
+.client_box{
+    width: 100%;
+    height: 100%;
     display: flex;
-    justify-content: center;
+    justify-content: space-around;
     align-items: center;
+    flex-wrap: wrap;
+    margin-top: -20px;
 }
-.box_container h3{
+.client_box1,
+.client_box2,
+.client_box3,
+.client_box4,
+.client_box5,
+.client_box6{
+    width: 30%;
+    height: 20vh;
+    background-color: gray;
+    font-size: 30px;
     text-align: center;
+    border-radius: 20px;
+    padding-top: 32px;
 }
-.container3 h2{
-    color: rgb(0, 0, 0);
-    text-align: center;
-    width: 100%;
-    justify-self: center;
-    margin-top: 10px;
-}
-.box1, 
-.box2, 
-.box3 {
-    width: 35%;
-    height: 80vh;
-    padding: 45px;
-    line-height: 27px;
-    background-color: white;
-}
-.box1 p, 
-.box2 p, 
-.box3 p {
-    padding-top: 25px;
-}
-/* -----------------------sec5------------------- */
-
 
 /* --------------footer/get in touch------------- */
 .footer{
@@ -201,7 +253,7 @@ html {
     width: 40%;
     height: 40vh;
     color: white;
-    margin-top: 200px;
+    margin-top: 150px;
     line-height: 30px;
 }
 .ul{
@@ -241,7 +293,7 @@ form{
     margin-top: 15px;
 }
 form h2{
-    color: brown;
+    color: rgb(0, 0, 0);
     font-weight: 800;
     margin-bottom: 20px;
 }
@@ -256,7 +308,7 @@ form input, form textarea{
 
 form button{
     padding: 15px;
-    background-color: rgb(54, 54, 36);
+    background-color: rgb(0, 0, 0);
     color: white;
     font-size: 18px;
     border: 0;
@@ -265,8 +317,13 @@ form button{
     width: 150px;
     margin: 20px auto 0;
     border-radius: 30px;
-    
 }
+.copyright_credit a{ 
+    text-decoration: none;
+    list-style-type: none;
+    color: rgb(125, 102, 102);
+}
+/* ------------------media queries------------- */
 @media all and (max-width: 627px){
    .navbar{
     flex-direction: column;
